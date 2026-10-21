@@ -82,7 +82,61 @@
         <p class="section__text">Radlwerk ist ein inhabergeführter Laden in München. Wir fahren selbst jeden Tag – ob zur Arbeit oder über die Alpenpässe – und beraten dich deshalb ehrlich und ohne Verkaufsdruck.</p>
       </div>
     </section>
+
+    <section class="section section--alt" id="kontakt">
+      <div class="container contact">
+        <div>
+          <h2 class="section__title">Kontakt &amp; <span class="accent">Anfahrt</span></h2>
+          <address class="contact__info">
+            Radlwerk München<br>
+            Musterstraße 1<br>
+            80331 München<br><br>
+            Tel. <a href="tel:+49891234567">089 1234567</a><br>
+            <a href="mailto:info@radlwerk-muenchen.example">info@radlwerk-muenchen.example</a><br><br>
+            Mo–Fr 9–18 Uhr · Sa 10–15 Uhr
+          </address>
+
+          <form class="form" id="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required minlength="2">
+            <p class="form__error" data-error-for="name" aria-live="polite"></p>
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="form__error" data-error-for="email" aria-live="polite"></p>
+
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+            <p class="form__error" data-error-for="message" aria-live="polite"></p>
+
+            <label class="form__check">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen.</span>
+            </label>
+            <p class="form__error" data-error-for="privacy" aria-live="polite"></p>
+
+            <button type="submit" class="btn">Nachricht senden</button>
+            <p class="form__success" id="form-success" hidden>Danke! Wir melden uns schnellstmöglich.</p>
+          </form>
+        </div>
+
+        <div class="map" id="map" data-src="https://www.google.com/maps?q=Marienplatz+1,+80331+M%C3%BCnchen&output=embed">
+          <p>Zum Anzeigen der Karte wird Google Maps geladen. Dabei werden Daten (z. B. deine IP-Adresse) an Google übertragen. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+          <button type="button" class="btn" id="map-consent">Karte laden</button>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Radlwerk München</p>
+      <nav aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
