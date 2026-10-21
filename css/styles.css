@@ -196,3 +196,10 @@ a { color: inherit; }
 .footer nav { display: flex; gap: 1.2rem; }
 
 @media (min-width: 900px) { .contact { grid-template-columns: 1fr 1fr; } }
+
+/* Legal pages */
+.legal { max-width: 46rem; }
+.legal h2 { margin-top: 2rem; font-size: 1.2rem; color: var(--color-accent); }
+.legal p { color: var(--color-muted); }
+.legal a { color: var(--color-accent); }
+.legal__note { padding: 0.8rem 1rem; border-left: 3px solid var(--color-error); background: var(--color-surface); }
