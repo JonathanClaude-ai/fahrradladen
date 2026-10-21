@@ -123,3 +123,28 @@ a { color: inherit; }
 }
 
 .accent { color: var(--color-accent); }
+
+/* Sections */
+.section { padding-block: 4rem; }
+.section--alt { background: var(--color-surface); }
+.section__title { margin: 0 0 2rem; font-size: clamp(1.7rem, 6vw, 2.5rem); }
+.section__text { max-width: 40rem; color: var(--color-muted); }
+
+.grid { display: grid; gap: var(--space); }
+.card {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  border: 1px solid transparent;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover { border-color: var(--color-accent); transform: translateY(-4px); }
+.card__icon { font-size: 2rem; }
+.card h3 { margin: 0.5rem 0; }
+.card p { margin: 0; color: var(--color-muted); }
+
+.list { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.9rem; }
+.list li { padding-left: 1.2rem; border-left: 3px solid var(--color-accent); }
+
+@media (min-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .grid { grid-template-columns: repeat(4, 1fr); } }
